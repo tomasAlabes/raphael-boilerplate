@@ -1,3 +1,4 @@
 require([ "./raphael/raphael" ], function (Raphael) {
-    console.log(Raphael);
+    var container = document.getElementById("container");
+    var paper = Raphael(container, 600, 600);
 });
