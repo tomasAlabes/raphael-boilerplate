@@ -2,8 +2,16 @@
 <head>
 	<title>Raphael Boilerplate</title>
 
-	<!-- AMD use -->
-	<script data-main="main" src="require.js"></script>
+	<!-- global use -->
+    <script type="text/javascript" src="./raphael/raphael.js"></script>
+
+    <script type="text/javascript">
+        // Initialize container when document is loaded
+        window.onload = function(){
+            var paper = Raphael(0, 0, 640, 720, "container");
+        };
+        //Work here or in a separate script file
+    </script>
 
 </head>
 <body>
